@@ -1,0 +1,88 @@
+.SidebarContainer {
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: white;
+  overflow: overlay;
+}
+
+.SidebarOpenBtn {
+  background: none;
+  appearance: none;
+  border: none;
+  top: 48%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0;
+  height: 50px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.SidebarOpenBtn:hover {
+  background-color: rgb(216 216 216 / 52%);
+  cursor: pointer;
+}
+
+.OpenImg {
+  width: 25px;
+}
+
+.CloseImg {
+  width: 20px;
+}
+
+.SidebarCloseBtn {
+  background: none;
+  border: none;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.SidebarCloseBtn:hover {
+  background-color: rgb(216 216 216 / 52%);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.newsComponent {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(106 106 106 / 38%);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.newsText {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.newsWebsiteName {
+  margin: 10px;
+}
+.newsDiscription {
+  margin: 10px;
+}
+.newsHeader {
+  text-align: center;
+  margin: 30px;
+}
+.newsImgArea {
+  padding: 20px;
+}
+.newsImg {
+  width: 100px;
+}
+.newsLink {
+  text-decoration: none;
+  color: white;
+}

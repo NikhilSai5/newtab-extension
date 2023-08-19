@@ -1,0 +1,36 @@
+Mongodb atlas:
+username: nsvkm56
+password: lHDxyuPOL2SYkkAd
+
+mongodb+srv://nsvkm56:<password>@cluster0.lvvzupu.mongodb.net/?retryWrites=true&w=majority
+
+
+sample details : 
+{
+    "name": "nikhil",
+    "email": "nsvkm56@gmail.com",
+    "password": "nikhil",
+    "confirmPassword": "nikhil"
+}
+
+pexels API KEY : mIZdthiPsT6hrIGHcGTOgwH61Q4UvepeUP3o9sU9GUqXm1HVhqas1fQQ
+
+pixabay API KEY : 17040018-9009ec2210656ee82db1ae269
+
+OpenWeatherMap API KEY : 313672dbfdeebf09aa9ff48a234f0c77
+OpenWeatherMap Image URL: https://openweathermap.org/img/wn/${imageCode}@2x.png
+
+news API KEY : e4747bc0eb834a96b6c034ee74f63285
+
+-------------------------------------------------------------------------------------------------------
+
+google calender api credentials:
+
+Project name : spruce
+project number : 269331928840
+project ID : spruce-396312
+
+client ID: 277668235590-mdjjiopm1gt362jrk52ric8vg3okt3fb.apps.googleusercontent.com
+client Secret : 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
+
+API KEY : AIzaSyBMDA4pyRe7MxxL2SWtLtvvPG7TgkfxDvE

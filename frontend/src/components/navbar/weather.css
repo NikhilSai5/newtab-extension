@@ -1,0 +1,74 @@
+.weatherContainer {
+  width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.part1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.weatherDetails {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 20px 30px 10px 30px;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.now {
+  margin: 0;
+  font-size: 15px;
+}
+
+.temp {
+  margin: 0;
+  font-size: 35px;
+}
+
+.location {
+  margin: 10px 20px;
+}
+
+.date {
+  margin: 10px 20px 10px 20px;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.locationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dateimg {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.locationimg {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.weatherimg {
+  width: 100px;
+  height: 100px;
+}

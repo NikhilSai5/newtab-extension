@@ -1,0 +1,134 @@
+.signupContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  width: 450px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.registerHeader {
+  margin: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.formComponent {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+}
+.R {
+  margin: 5px;
+}
+
+#name {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-left: 14px;
+}
+#name::placeholder {
+  color: rgb(198, 198, 198);
+}
+
+#email {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-left: 14px;
+}
+#email::placeholder {
+  color: rgb(198, 198, 198);
+}
+
+#password {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-left: 14px;
+}
+#password::placeholder {
+  color: rgb(198, 198, 198);
+}
+#confirmPassword {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-left: 14px;
+}
+#confirmPassword::placeholder {
+  color: rgb(198, 198, 198);
+}
+
+.ask_login {
+  margin: 10px;
+  margin-top: 25px;
+  align-self: center;
+}
+
+.hyperlink {
+  color: white;
+}
+.hyperlink:hover {
+  color: rgb(107, 107, 225);
+}
+
+.RformSubmit {
+  width: 120px;
+  align-self: center;
+  height: 39px;
+  appearance: none;
+  background: none;
+  border: 1px solid black;
+  border-color: white;
+  color: white;
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.RformSubmit:hover {
+  background-color: rgb(179 179 179);
+  border-color: black;
+  color: black;
+  cursor: pointer;
+}
+.SignupForm {
+  display: flex;
+  flex-direction: column;
+}

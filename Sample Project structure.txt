@@ -1,0 +1,67 @@
+my-new-tab-extension/
+  ├── backend/
+  │   ├── controllers/
+  │   │   ├── authController.js
+  │   │   ├── userController.js
+  │   │   └── calendarController.js
+  │   ├── models/
+  │   │   ├── User.js
+  │   │   └── CalendarEvent.js
+  │   ├── routes/
+  │   │   ├── authRoutes.js
+  │   │   ├── userRoutes.js
+  │   │   └── calendarRoutes.js
+  │   ├── config/
+  │   │   └── config.js
+  │   └── server.js
+  ├── frontend/
+  │   ├── public/
+  │   │   └── index.html
+  │   ├── src/
+  │   │   ├── components/
+  │   │   │   ├── Auth/
+  │   │   │   │   ├── Login.js
+  │   │   │   │   └── Register.js
+  │   │   │   ├── Calendar/
+  │   │   │   │   ├── Calendar.js
+  │   │   │   │   └── Event.js
+  │   │   │   └── App.js
+  │   │   ├── utils/
+  │   │   │   ├── api.js
+  │   │   │   └── auth.js
+  │   │   ├── App.css
+  │   │   └── index.js
+  │   └── package.json
+  ├── package.json
+  ├── .env
+  └── manifest.json
+
+backend: This directory will contain all the server-side code using Node.js and Express.js.
+
+frontend: This directory will contain all the client-side code using React.
+
+backend/controllers: This folder holds the controller files responsible for handling the business logic of different routes.
+
+backend/models: This folder contains the MongoDB models that define the schema for the User and CalendarEvent.
+
+backend/routes: This folder contains the route files that define the API endpoints for login, registration, and calendar-related functionalities.
+
+backend/config: This folder holds the configuration files, such as the MongoDB connection settings and other environment variables.
+
+backend/server.js: The entry point for your Node.js server.
+
+frontend/public: Contains the public assets like index.html.
+
+frontend/src: Contains all the React source code.
+
+frontend/src/components: Contains the different components of your React app, such as Auth (Login and Register) and Calendar components.
+
+frontend/src/utils: Contains utility files, such as API calls and authentication functions.
+
+frontend/src/App.js: The main component that renders other components based on the current state or route.
+
+frontend/package.json: The package.json file for your frontend application.
+
+package.json: The package.json file for the entire project that includes dependencies and scripts for both frontend and backend.
+
+.env: This file contains sensitive information like the database connection string and API keys. Be sure to add this to your .gitignore file to avoid accidental exposure.
