@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { useQuery, QueryClient, QueryClientProvider } from "react-query";
 import { Navigate, Route, useNavigate } from "react-router-dom";
 import CalendarEvents from "./components/googleCalender/CalenderEvents";
+import Todo from "./components/todo/Todo";
 
 const queryClient = new QueryClient();
 
@@ -55,6 +56,7 @@ const Mainpage = () => {
         <Sidebar />
       </QueryClientProvider>
       <CalendarEvents />
+      <Todo />
     </>
   );
 };

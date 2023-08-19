@@ -1,0 +1,67 @@
+.todoContainer {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  height: 300px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  position: inherit;
+  margin: 10px;
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  transition: 0.4s;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+.checkbox.is-completed {
+  position: inherit;
+  margin: 10px;
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.text {
+  margin: 10px;
+  width: 361px;
+  color: white;
+}
+.text.is-completed {
+  margin: 10px;
+  width: 361px;
+  color: white;
+  text-decoration: line-through;
+}
+
+.deleteBtn {
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  margin: 10px;
+}
+
+.todoComponent {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(106 106 106 / 38%);
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.todoComponent:hover {
+  opacity: 0.8;
+}
