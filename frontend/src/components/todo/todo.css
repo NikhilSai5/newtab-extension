@@ -24,7 +24,7 @@
 .checkbox:hover {
   cursor: pointer;
 }
-.checkbox.is-completed {
+.checkbox-completed {
   position: inherit;
   margin: 10px;
   appearance: none;
@@ -39,7 +39,7 @@
   width: 361px;
   color: white;
 }
-.text.is-completed {
+.text-completed {
   margin: 10px;
   width: 361px;
   color: white;
@@ -52,6 +52,9 @@
   border: none;
   color: white;
   margin: 10px;
+}
+.deleteBtn:hover {
+  cursor: pointer;
 }
 
 .todoComponent {

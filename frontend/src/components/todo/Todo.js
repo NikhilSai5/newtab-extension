@@ -22,9 +22,9 @@ const Todo = () => {
   };
 
   const completedTodo = async (id) => {
-    const data = await fetch(API_BASE + "/todo/complete/" + id).then((res) =>
-      res.json()
-    );
+    const data = await fetch(API_BASE + "/todo/complete/" + id, {
+      method: "PUT",
+    }).then((res) => res.json());
 
     setTodos((todos) => {
       return todos.map((todo) => {
@@ -41,17 +41,18 @@ const Todo = () => {
       method: "DELETE",
     }).then((res) => res.json());
 
-    setTodos((todos) => todos.filter((todo) => todo._id !== data.id));
+    if (data.success) {
+      setTodos((todos) => todos.filter((todo) => todo._id !== id));
+    } else {
+      console.error("Delete failed");
+    }
   };
 
   return (
     <>
       <div className="todoContainer">
         {todos.map((todo) => (
-          <div
-            className={"todoComponent" + (todo.complete ? "-completed" : "")}
-            key={todo._id}
-          >
+          <div className="todoComponent" key={todo._id}>
             <div
               className="checkbox"
               onClick={() => {

@@ -65,3 +65,12 @@ frontend/package.json: The package.json file for your frontend application.
 package.json: The package.json file for the entire project that includes dependencies and scripts for both frontend and backend.
 
 .env: This file contains sensitive information like the database connection string and API keys. Be sure to add this to your .gitignore file to avoid accidental exposure.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+use this code to put timeContainer and searchContainer in centre 
+left: 50%;
+transform: translate(-50%, 0%);
+position: fixed;
+
+
