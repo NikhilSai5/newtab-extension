@@ -1,16 +1,19 @@
 .todoContainer {
   position: fixed;
-  bottom: 0%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, 0%);
   margin: 5px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   border-radius: 15px;
-  height: 300px;
+  max-height: 240px;
+  min-height: 100px;
   width: 450px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
+  overflow: overlay;
 }
 .checkbox {
   position: inherit;
@@ -67,4 +70,81 @@
 
 .todoComponent:hover {
   opacity: 0.8;
+}
+.addPopup {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  margin: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.addPopup:hover {
+  background-color: rgb(127 127 127 / 56%);
+  cursor: pointer;
+}
+
+.popupContent {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: rgb(106 106 106 / 38%);
+  border-radius: 15px;
+  position: fixed;
+  padding: 10px;
+}
+
+.popup {
+  color: white;
+  position: fixed;
+}
+.closePopup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 5px;
+  margin: 12px;
+}
+.closePopup:hover {
+  background-color: rgb(127 127 127 / 56%);
+  cursor: pointer;
+}
+.popupHeader {
+  margin: 0;
+}
+.createTask {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 5px;
+}
+
+.createTask:hover {
+  background-color: rgb(127 127 127 / 56%);
+  cursor: pointer;
+}
+.add-todo-input {
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 86%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 31px;
 }

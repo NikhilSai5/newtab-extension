@@ -33,20 +33,8 @@ app.post("/todo/new", (req, res) => {
 
 app.delete("/todo/delete/:id", async (req, res) => {
   const result = await Todo.findByIdAndDelete(req.params.id);
-  try {
-    const result = await Todo.findByIdAndDelete(req.params.id);
 
-    if (!result) {
-      return res
-        .status(404)
-        .json({ success: false, message: "Todo not found" });
-    }
-
-    res.json({ success: true, id: result._id });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ success: false, message: "Internal server error" });
-  }
+  res.json({ result });
 });
 
 app.put("/todo/complete/:id", async (req, res) => {

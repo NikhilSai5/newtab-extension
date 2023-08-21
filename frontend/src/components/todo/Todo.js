@@ -41,11 +41,23 @@ const Todo = () => {
       method: "DELETE",
     }).then((res) => res.json());
 
-    if (data.success) {
-      setTodos((todos) => todos.filter((todo) => todo._id !== id));
-    } else {
-      console.error("Delete failed");
-    }
+    setTodos((todos) => todos.filter((todo) => todo._id !== data.result._id));
+  };
+
+  const addTodo = async () => {
+    const data = await fetch(API_BASE + "/todo/new", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: newTodo,
+      }),
+    }).then((res) => res.json());
+    setTodos([...todos, data]);
+
+    setPopUpActive(false);
+    setNewTodo("");
   };
 
   return (
@@ -59,14 +71,55 @@ const Todo = () => {
                 completedTodo(todo._id);
               }}
             >
-              <i className="zmdi zmdi-square-o"></i>
+              <i
+                className={`zmdi ${
+                  todo.complete ? "zmdi-check-square" : "zmdi-square-o"
+                }`}
+              ></i>
             </div>
-            <div className="text">{todo.text}</div>
+            <div className={`text${todo.complete ? "-completed" : ""}`}>
+              {todo.text}
+            </div>
             <div className="deleteBtn" onClick={() => deleteTodo(todo._id)}>
               <i className="zmdi zmdi-delete"></i>
             </div>
           </div>
         ))}
+        <div
+          className="addPopup"
+          onClick={() => {
+            setPopUpActive(true);
+          }}
+        >
+          <i class="zmdi zmdi-plus"></i>
+        </div>
+        <div className="popup">
+          {popUpActive ? (
+            <div className="popupContent">
+              <div
+                className="closePopup"
+                onClick={() => {
+                  setPopUpActive(false);
+                }}
+              >
+                <i class="zmdi zmdi-close"></i>
+              </div>
+              <h3 className="popupHeader">Add your task</h3>
+
+              <input
+                type="text"
+                className="add-todo-input"
+                onChange={(e) => setNewTodo(e.target.value)}
+                value={newTodo}
+              />
+              <div className="createTask" onClick={addTodo}>
+                <i class="zmdi zmdi-plus"></i>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </>
   );
