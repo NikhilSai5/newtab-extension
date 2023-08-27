@@ -104,7 +104,7 @@ const Todo = () => {
               >
                 <i class="zmdi zmdi-close"></i>
               </div>
-              <h3 className="popupHeader">Add your task</h3>
+              <h3 className="popupHeader">Add you task</h3>
 
               <input
                 type="text"
