@@ -55,7 +55,7 @@ const Mainpage = () => {
       <QueryClientProvider client={queryClient}>
         <Sidebar />
       </QueryClientProvider>
-      <CalendarEvents />
+
       <Todo />
     </>
   );

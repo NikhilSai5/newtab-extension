@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import Mainpage from "./Mainpage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
 import Logout from "./components/auth/logout";
@@ -10,6 +10,11 @@ export const userContext = createContext();
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    navigate("/main");
+  }, [navigate]);
 
   return (
     <>
